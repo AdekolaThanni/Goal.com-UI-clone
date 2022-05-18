@@ -1,0 +1,425 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #e3e5e6;
+    font-family: sans-serif;
+    margin: 0;
+}
+
+/*************************************************** Header design ******************************************************/
+
+header{
+    background-color: #081f2c;
+    height: 80px;
+    position: fixed;
+    top: 0px;
+    width:100%;
+}
+
+/* Header logo */
+#logo{
+    background-image: url(../images/goal.png);
+    background-position: -102px 0;
+    display: inline-block;
+    height: 30px;
+    left: 20px;
+    position: relative;
+    top: 35%;
+    width: 69px;
+    z-index: 1;
+}
+
+/* Header navigation links container */
+.nav-links{
+    display: inline-block;
+    position: relative;
+    left: 0;
+    text-align: center;
+    top: 20px;
+    list-style-type: none;
+}
+
+/* Navigation links */
+.link-right-border{
+    border-right: 2px solid rgb(88, 233, 238);
+    height: 25px;
+    padding:0px 3px;
+    display: inline-block;
+}
+.absent{
+    border-right-width:0px ;
+}
+
+#periods{
+    display: none;
+}
+.mobile-nav{
+    display: none;
+}
+.link-bottom-border{
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    margin-right: 10px;
+    text-decoration: none;
+    overflow: visible;
+    transition: border-bottom  0.01s ease-in ;
+}
+
+#current{
+    padding-bottom: 10px;
+    border-bottom: 5px solid rgb(88, 233, 238); 
+}
+
+.link-bottom-border:hover{
+    padding-bottom: 10px;
+    border-bottom: 5px solid rgb(88, 233, 238);
+}
+
+.social-medias{
+    float: right;
+    height: 80px;
+    padding-top: 28px;
+    width: 330px;
+    padding-left: 0px;
+    
+}
+.social-medias a{
+    margin-right: 15px;
+    display: inline-block;
+    text-align: center;
+    height: auto;
+    overflow:visible;
+}
+
+
+.social-medias img{
+    width: 32px;
+    height: 32px;
+}
+
+#image-right-border{
+    height: 22px;
+    padding-left: 15px;
+    border-left: 2px solid rgb(88, 233, 238);
+    position: relative;
+    bottom: 7px;
+}
+
+#image-right-border img{
+    width: 25px;
+    height: 20px;
+    border: 1px solid white;
+}
+
+.social-medias p{
+    display: inline-block;
+    color: white;
+    position: relative;
+    right: 12px;
+    bottom: 10px;
+}
+
+.hamburger{
+    display: none;
+}
+
+/********************** Mobile Phones ****************/
+@media screen and (max-width: 980px) {
+    header{
+        height: 60px;
+    }
+    .nav-links{
+        display: none;
+    }
+    .social-medias{
+        display: none;
+    }
+    .mobile-nav{
+        display: inline-block;
+        float: right;
+        position: relative;
+        top: 20px;
+        right: 70px;
+        width: 120px; 
+        border-right: 1px solid yellow;
+        height: 25px;
+        padding-right: 12px;
+    }
+    #livescores{
+        position: relative;
+        bottom: 15px;
+        display: inline-block;
+        background-color: yellow;
+        width: 100%;
+        padding: 2px 5px;
+    }
+    .hamburger{
+        display: inline-block;
+        float: right;
+        position: relative;
+        left: 95px;
+        top: 13px;
+    }
+    .hamburger img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .footer{
+        background-image: url(../images/580-footer-bg.044ee4aa38.jpg);
+    }
+
+}
+
+@media screen and (max-width:1420px) {
+    #betting{
+        display: none;
+    }
+    #periods{
+        display: inline-block;
+    }
+    
+}
+
+@media screen and (max-width: 1360px) {
+    #laliga{
+        display: none;
+    }
+    #periods{
+        display: inline-block;
+    }
+    
+}
+
+@media screen and (max-width: 1300px) {
+    #serie-a{
+        display: none;
+    }
+    #periods{
+        display: inline-block;
+    }
+    
+}
+@media screen and (max-width: 1240px) {
+    #epl{
+        display: none;
+    }
+    #periods{
+        display: inline-block;
+    }
+    
+}
+
+@media screen and (max-width: 1180px) {
+    #teams{
+        display: none;
+    }
+    #periods{
+        display: inline-block;
+    }
+    
+}
+
+
+/****************************************** Content *****************************************/
+.container{
+    text-align: center;
+}
+
+.image-div{
+    padding-top: 120px;
+    text-align: center;
+}
+
+.image-div img{
+    width: 400px;
+    height: 200px;
+}
+
+/* News container */
+.news-container{
+    width: 1280px;
+    height: auto;
+    padding: 0px 40px;
+    margin: 30px auto;
+}
+
+.football-news{
+    background-color: #081f2c;
+    text-align: left;
+    height: 7%;
+    color: white;
+    font-weight: bolder;
+    font-size: 1.7em;
+    padding: 15px 0px 5px 15px ;
+    margin-bottom: 10px;
+}
+
+.news-nav{
+    height: 40px;
+}
+.latest{
+    display: inline-block;
+    background-color: rgb(88, 233, 238);
+    width: 49%;
+    float: left;
+    height: 100%;
+    margin-right: 2%; 
+    text-align: center;
+    padding-top: 13px;
+    color: white;
+
+
+}
+.matches{
+    display: inline-block;
+    border: 1px solid black;
+    width: 49%;
+    height: 100%;
+    float: right;
+    text-align: center;
+    padding-top: 11px;
+    color: gray;
+}
+
+.news-content{
+    margin-top: 10px;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 800px 370px;
+    rows: auto auto auto;
+}
+
+.headline{
+    grid-area: 1 / 1 / span 1 / span 1;
+    background-color: white;
+    height: 200px;
+    padding: 30px;
+    line-height: 2;
+    font-size: 18px;
+    text-align: center;
+    transition: background-color 0.01s ease-in;
+
+}
+
+.side-news{
+    grid-area: 1 / 2 / span 3 / span 1;
+    background-color: white;
+    height: 660px; 
+}
+
+.small-headline{
+    grid-area: 2 / 1 / span 1 / span 1;
+    height: 200px;
+}
+
+.right{
+    display: inline-block;
+    float: right;
+    width: 49%;
+    background-color: white;
+    height: 100%;
+    padding: 30px;
+    line-height: 2;
+    font-size: 18px;
+    text-align: center;
+    overflow: hidden;
+    transition: background-color 0.01s ease-in;
+
+}
+
+.left{
+    display: inline-block;
+    float: left;
+    width: 49%;
+    height: 100%;
+    background-color: white;
+    padding: 30px;
+    line-height: 2;
+    font-size: 18px;
+    text-align: center;
+    overflow: hidden;
+    transition: background-color 0.01s ease-in;
+}
+
+.small-headline2{
+    grid-area: 3 / 1 / span 1 / span 1;
+    height: 200px;
+}
+
+.headline:hover , .right:hover , .left:hover{
+    background-color: rgba(255, 255, 255, 0.301);
+    cursor: pointer;
+}
+
+/************************************ Footer Design *********************************/
+
+.footer{
+    background-image: url(../images/980-footer-bg.97c0f6c0a5.jpg);
+    width: 100%;
+    height: 300px;
+    bottom: 0px;
+    text-align: center;
+    padding-top : 150px;
+}
+
+.social-media-links img{
+    width: 32px;
+    height: 32px;
+    margin: 10px;
+}
+
+.about-links{
+    margin: 20px 0px;
+}
+
+.about-links a{
+    text-decoration: none;
+    border-right: 1px solid white;
+    color: white;
+    padding: 0px 10px;
+}
+
+.copyright{
+    color: white;
+    font-size: 10px;
+}
+
+/************************ Mobile Phones ********************/
+@media screen and (max-width: 1240px){
+    .news-container{
+        width: 95%;
+    }
+    .news-content{
+        display: block;
+    }
+    .side-news{
+        display: none;
+    }
+    .small-headline, .small-headline2{
+        margin-top: 10px;
+    }
+    .headline, .right, .left{
+        font-size: 16px;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .footer{
+        background-image: url(../images/480-footer-bg.6cef6f0432.jpg);
+    }
+}
+
+@media screen and (max-width: 320px){
+    .footer{
+        background-image: url(../images/320-footer-bg.5b230073a4.jpg);
+    }
+}
+
+
+
+
